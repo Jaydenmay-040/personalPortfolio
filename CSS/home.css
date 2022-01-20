@@ -1,9 +1,8 @@
-#main {
+#home {
     width: 100vw;
     height: 100vh;
     background: #212228;
-    position: absolute;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 #bgtext {
     font-family: 'Calibri';
@@ -85,13 +84,16 @@
     top: 55%;
     left: -170px;
     transform: rotate(-90deg);
+    z-index: 123;
 }
 #menu ul {
     list-style: none;
 }
-#menu ul li {
+#menu ul a {
     display: inline-block;
     margin-left: 50px;
+    font-weight: bold;
+    cursor: pointer;
 }
 #imgs img {
     position: absolute;
