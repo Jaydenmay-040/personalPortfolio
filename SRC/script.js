@@ -27,10 +27,28 @@ layer.mousemove(function(e) {
     });
 });
 
-function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if(e.style.display == 'block')
-       e.style.display = 'none';
-    else
-       e.style.display = 'block';
- }
+// CURSOR FUNCTIONALITY
+let innerCursor = document.querySelector(".inner-cursor");
+let outerCursor = document.querySelector(".outer-cursor");
+
+document.addEventListener("mousemove", moveCursor);
+
+function moveCursor(e) {
+    let x = e.clientX;
+    let y = e.clientY;
+    innerCursor.style.left = `${x}px`;
+    innerCursor.style.top = `${y}px`;
+    outerCursor.style.left = `${x}px`;
+    outerCursor.style.top = `${y}px`;
+}
+
+let links = Array.from(document.querySelectorAll(".link"));
+
+links.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+        innerCursor.classList.add("grow");
+    });
+    link.addEventListener("mouseleave", () => {
+        innerCursor.classList.remove("grow");
+    });
+});

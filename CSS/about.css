@@ -2,4 +2,18 @@
     width: 100vw;
     height: 100vh;
     background: #212228;
+    /* position: absolute; */
+    transition: 0.1s ;
+}
+#aboutText {
+    position: relative;
+    top: 69px;
+    left: 115px;
+    font-size: 23px;
+    text-transform: uppercase;
+    width: 65%;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    transform: scale(1.1, 1);
 }

@@ -3,6 +3,7 @@
     height: 100vh;
     background: #212228;
     overflow-x: hidden;
+    /* position: absolute; */
 }
 #bgtext {
     font-family: 'Calibri';
@@ -13,9 +14,10 @@
     margin-top: 39px;
     margin-left: 80px;
     line-height: 255px;
+    position: absolute;
 }
 .gridline {
-    position: absolute;
+    position: fixed;
     top: 0px;
     bottom: 0px;
     width: 10%;
@@ -67,6 +69,7 @@
     position: absolute;
     left: 50px;
     top: 30px;
+    z-index: 123;
 }
 #logo img {
     width: 50px;
@@ -74,13 +77,14 @@
     height: 50px;
     border-radius: 50%;
     border: solid #FFFFFF;
+    z-index: 123;
 }
 #menu {
     font-family: arial;
     font-size: 10px;
     color: white;
     letter-spacing: 3px;
-    position: absolute;
+    position: fixed;
     top: 55%;
     left: -170px;
     transform: rotate(-90deg);
@@ -94,6 +98,7 @@
     margin-left: 50px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
 #imgs img {
     position: absolute;
