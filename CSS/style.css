@@ -5,10 +5,17 @@
     box-sizing: border-box;
     cursor: none;
 }
-html {
+body {
     overflow-y: hidden;
     overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    scroll-behavior: smooth!important;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .inner-cursor {
     position: fixed;
     left: 10px;

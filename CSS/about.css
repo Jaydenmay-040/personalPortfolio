@@ -2,18 +2,53 @@
     width: 100vw;
     height: 100vh;
     background: #212228;
-    /* position: absolute; */
-    transition: 0.1s ;
-}
-#aboutText {
     position: relative;
-    top: 69px;
-    left: 115px;
+    transition: 0.1s ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    scroll-behavior: smooth!important;
+}
+#about::-webkit-scrollbar {
+    display: none;
+}
+/* #about #bgtext {
+    position: fixed;
+} */
+.txt {
     font-size: 23px;
     text-transform: uppercase;
-    width: 65%;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFFFFF;
     transform: scale(1.1, 1);
+    letter-spacing: 5px;
+    left: 145px;
+}
+#aboutText {
+    position: relative;
+    top: 69px;
+    width: 75%;
+}
+#aboutTxt {
+    position: relative;
+    top: 450px;
+}
+#scroller {
+    position: relative;
+    top: 175px;
+    left: 210px;
+    color: #A8A8A8;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+#scroller::before {
+    content: '';
+    position: absolute;
+    width: 1.1px;
+    height: 200px;
+    background-color: #A8A8A8;
+    top: 45px;
+    left: 39px;
 }
