@@ -1,13 +1,82 @@
-#timeline {
-    width: 100vw;
-    height: 100vh;
-    background: #212228;
-    position: absolute;
-    transition: 0.1s ;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
-    scroll-behavior: smooth!important;
-    margin: 0 0 10% 0;
+#educationHeading {
+    position: relative;
+    right: 165px;
+    top: 650px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    color: #E75555;
+}
+#educationContentContainer {
+    position: relative;
+    top: 700px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.year {
+    margin-top: 5%;
+    /* margin-right: 12%; */
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 165px;
+}
+.subtitle {
+    margin-top: 1%;
+    /* margin-left: 7%; */
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 165px;
+    color: #E75555;
+}
+.educationInfo {
+    margin-top: 2%;
+    /* width: 60%; */
+    /* margin-left: 7%; */
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 165px;
+    text-align: end;
+    padding-left: 35%;
+}
+/* EXPERIENCE */
+#experienceHeading {
+    position: relative;
+    left: 165px;
+    top: 930px;
+    font-size: 50px;
+    color: #E75555;
+}
+#experienceContentContainer {
+    position: relative;
+    top: 980px;
+}
+.experienceYear {
+    margin-top: 5%;
+    font-size: 18px;
+    position: relative;
+    left: 165px;
+}
+.experienceSubtitle {
+    margin-top: 1%;
+    font-size: 35px;
+    position: relative;
+    left: 165px;
+    color: #E75555;
+}
+.experienceInfo {
+    margin-top: 2%;
+    font-size: 20px;
+    /* width: 60%; */
+    text-align: left;
+    position: relative;
+    left: 165px;
+    padding-right: 35%;
 }

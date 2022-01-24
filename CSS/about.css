@@ -1,7 +1,7 @@
 #about {
     width: 100vw;
     height: 100vh;
-    background: #212228;
+    /* background: #212228; */
     position: absolute;
     transition: 0.1s ;
     overflow-y: scroll;
@@ -14,15 +14,14 @@
 #about::-webkit-scrollbar {
     display: none;
 }
-/* #about #bgtext {
-    position: fixed;
-} */
+#about #bgtext {
+    z-index: -1;
+}
 .txt {
     font-size: 23px;
     text-transform: uppercase;
-    color: transparent;
+    color: #FFFFFF;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
     transform: scale(1.1, 1);
     letter-spacing: 5px;
     /* left: 145px; */
@@ -33,11 +32,21 @@
     width: 75%;
     left: 145px;
 }
+#aboutText span {
+    color: #E75555;
+    font-size: 25px;
+    -webkit-text-stroke-width: 2px;
+}
 #aboutTxt {
     position: relative;
     /* top: 450px; */
     left: 135px;
     width: 50%;
+}
+#aboutTxt span {
+    color: #E75555;
+    font-size: 25px;
+    -webkit-text-stroke-width: 2px;
 }
 #scroller {
     position: relative;
@@ -51,7 +60,7 @@
     content: '';
     position: absolute;
     width: 1.1px;
-    height: 200px;
+    height: 175px;
     background-color: #A8A8A8;
     top: 45px;
     left: 39px;

@@ -1,0 +1,22 @@
+#skillsHeading {
+    position: relative;
+    right: 165px;
+    top: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    color: #E75555;
+}
+.skillsInfo {
+    top: 1250px;
+    margin-top: 2%;
+    /* width: 60%; */
+    /* margin-left: 7%; */
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 165px;
+    text-align: end;
+    padding-left: 35%;
+}

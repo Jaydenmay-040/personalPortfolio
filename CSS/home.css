@@ -1,7 +1,7 @@
 #home {
     width: 100vw;
     height: 100vh;
-    background: #212228;
+    /* background: #212228; */
     overflow-x: hidden;
     /* position: absolute; */
 }
@@ -110,13 +110,18 @@
 }
 #img1 {
     width: 82%;
+    position: fixed !important;
 }
 #img2 {
     width: 97%;
+    position: fixed !important;
+    /* z-index: 1; */
 }
 #img3 {
     width: 30%;
 }
 #img4 {
     width: 90%;
+    /* position: fixed !important; */
+    /* z-index: 1; */
 }
