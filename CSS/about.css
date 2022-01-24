@@ -2,13 +2,14 @@
     width: 100vw;
     height: 100vh;
     background: #212228;
-    position: relative;
+    position: absolute;
     transition: 0.1s ;
     overflow-y: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;
     scroll-behavior: smooth!important;
+    margin: 0 0 10% 0;
 }
 #about::-webkit-scrollbar {
     display: none;
@@ -24,16 +25,19 @@
     -webkit-text-stroke-color: #FFFFFF;
     transform: scale(1.1, 1);
     letter-spacing: 5px;
-    left: 145px;
+    /* left: 145px; */
 }
 #aboutText {
     position: relative;
     top: 69px;
     width: 75%;
+    left: 145px;
 }
 #aboutTxt {
     position: relative;
-    top: 450px;
+    /* top: 450px; */
+    left: 135px;
+    width: 50%;
 }
 #scroller {
     position: relative;
@@ -51,4 +55,23 @@
     background-color: #A8A8A8;
     top: 45px;
     left: 39px;
+}
+#aboutContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: 450px;
+}
+#aboutImg {
+    /* background: url(/IMG/Jayden-May.jpg); */
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/IMG/Jayden-May.jpg);
+    /* background-size: cover; */
+    width: 278px;
+    height: 250px;
+    position: absolute;
+    position: relative;
+    left: 22%;
 }
