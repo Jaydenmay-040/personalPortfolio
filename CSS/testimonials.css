@@ -1,0 +1,151 @@
+#testimonialHeading {
+    position: relative;
+    left: 165px;
+    top: 1450px;
+    display: flex;
+    font-size: 50px;
+    color: #E75555;
+}
+.carouselContainer {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 4600px;
+    padding-bottom: 2%;
+    width: 100%;
+}
+.carouselWrapper {
+    height: 400px;
+    position: relative;
+    width: 900px;
+    display: block;
+    background-color: #FFF;
+}
+.carouselItem {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+}
+.arrow {
+    /* border: solid black;
+    border-width: 0 3px 3px 0; */
+    display: inline-block;
+    /* padding: 12px; */
+    transform: scale(7.1, 2.8);
+    color: rgb(0, 0, 0, 0.88);
+}
+.arrowPrev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+
+}
+.arrowNext {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%) rotate(180deg); */
+}
+[id^= "item"] {
+    display: none;
+}
+.item1 {
+    z-index: 2;
+    opacity: 1;
+}
+.carouselImg1 {
+    background: url(https://jayden-may-portfolio.netlify.app/Images/img14.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 125%;
+    /* position: absolute;
+    bottom: -18px;
+    left: 20px; */
+    margin: -45px 0 0 -4%;
+    background-position-x: center;
+}
+.carouselImg2 {
+    background: url("https://jayden-may-portfolio.netlify.app/Images/img15.JPG");
+    background-size: cover;
+    width: 50%;
+    height: 125%;
+    /* position: absolute;
+    bottom: -18px;
+    left: 20px; */
+    margin: -45px 0 0 -4%;
+    background-position-x: center;
+}
+.carouselImg3 {
+    background: url("https://jayden-may-portfolio.netlify.app/Images/img17.JPG");
+    width: 50%;
+    height: 125%;
+    /* position: absolute;
+    bottom: -18px;
+    left: 20px; */
+    margin: -45px 0 0 -4%;
+    background-position-x: center;
+    background-size: cover;
+}
+.carouselImg4 {
+    background: url("https://jayden-may-portfolio.netlify.app/Images/img16.JPG");
+    background-size: cover;
+    width: 50%;
+    height: 125%;
+    /* position: absolute;
+    bottom: -18px;
+    left: 20px; */
+    margin: -45px 0 0 -4%;
+    background-position-x: center;
+}
+.carouselImg5 {
+    background: url("https://jayden-may-portfolio.netlify.app/Images/img18.JPG");
+    background-size: cover;
+    width: 50%;
+    height: 125%;
+    /* position: absolute;
+    bottom: -18px;
+    left: 20px; */
+    margin: -45px 0 0 -4%;
+    background-position-x: center;
+}
+*:target ~ .item1 {
+    opacity: 0;
+}
+#item1:target ~ .item1 {
+    opacity: 1;
+}
+#item2:target ~ .item2, #item3:target ~ .item3, #item4:target ~ .item4, #item5:target ~ .item5 {
+    z-index: 3;
+    opacity: 1;
+}
+.carouselTxt1 {
+    color: #E75555;
+    align-items: center;
+    position: relative;
+    left: 9%;
+}
+.carouselTxt1 span {
+    font-size: 15px;
+    color: #212228;
+}
+.carouselInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+}
+.carouselInfo > div {
+    display: flex; 
+    flex-basis: calc(47.33% - 10px);
+    justify-content: center;
+    flex-direction: column;
+}

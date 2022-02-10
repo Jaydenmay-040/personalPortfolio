@@ -1,0 +1,26 @@
+#contact {
+    width: 100vw;
+    height: 100vh;
+    /* background: #212228; */
+    position: absolute;
+    transition: 3s ease-in-out;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth!important;
+    top: 2100px;
+}
+#contact::-webkit-scrollbar {
+    display: none;
+}
+#contact #bgtext {
+    z-index: -1;
+}
+#contactHeading {
+    position: relative;
+    left: 165px;
+    top: 69px;
+    font-size: 50px;
+    color: #E75555;
+}

@@ -38,19 +38,24 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 .skillsRow p {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
+    width: 25%;
+    margin-bottom: 50px;
 }
 .skillsRow p span {
-    font-size: 30px;
+    font-size: 33px;
     color: #E75555;
 }
-.skillsRow p:nth-child(2) {
+/* .skillsRow p:nth-child(1) {
     margin-right: 150px;
     margin-left: 150px;
     margin-bottom: 70px;
-}
+} */
