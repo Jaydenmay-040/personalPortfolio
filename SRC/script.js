@@ -27,11 +27,59 @@ layer.mousemove(function(e) {
     });
 });
 
-// HOME IMGS FUNCTION
+// ABOUT IMGS FUNCTION
 var object1 = $('#img2');
 var object2 = $('#img4');
 
 var layer = $('#about');
+
+layer.mousemove(function(e) {
+    var valueX = (e.pageX * -1 / 20);
+    var valueY = (e.pageY * -1 / 20);
+
+    object1.css({
+        'transform':'translate(-50%, -50%) translate3d('+valueX+'px,'+valueY+'px,0)'
+    });
+});
+
+layer.mousemove(function(e) {
+    var valueX = (e.pageX * -1 / 50);
+    var valueY = (e.pageY * -1 / 50);
+
+    object2.css({
+        'transform':'translate(-50%, -50%) translate3d('+valueX+'px,'+valueY+'px,0)'
+    });
+});
+
+// PROJECT IMGS FUNCTION
+var object1 = $('#img2');
+var object2 = $('#img4');
+
+var layer = $('#project');
+
+layer.mousemove(function(e) {
+    var valueX = (e.pageX * -1 / 20);
+    var valueY = (e.pageY * -1 / 20);
+
+    object1.css({
+        'transform':'translate(-50%, -50%) translate3d('+valueX+'px,'+valueY+'px,0)'
+    });
+});
+
+layer.mousemove(function(e) {
+    var valueX = (e.pageX * -1 / 50);
+    var valueY = (e.pageY * -1 / 50);
+
+    object2.css({
+        'transform':'translate(-50%, -50%) translate3d('+valueX+'px,'+valueY+'px,0)'
+    });
+});
+
+// CONTACT IMGS FUNCTION
+var object1 = $('#img2');
+var object2 = $('#img4');
+
+var layer = $('#contact');
 
 layer.mousemove(function(e) {
     var valueX = (e.pageX * -1 / 20);
