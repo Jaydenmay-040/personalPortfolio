@@ -33,9 +33,81 @@
             <a href="#home" class="style link" id="#home">HOME</a>
             <a href="#about" class="style link" id="#about">ABOUT</a>
             <a href="#project" class="style link" id="#project">PROJECT</a>
-            <a href="#contact" class="style link" id="#contact">CONTACT</a>
+            <a href="#contact" class="style link" id="#contact">
+                <label for="modal-btn">CONTACT <i class="uil uil-expand-arrows"></i></label> 
+            </a>
         </ul>
     </div>
+        <div class="section full-height">
+            <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>		
+            <div class="modal">
+                <div id="bgtext">
+                    CONTACT<br>ME
+                </div>		
+                <div class="modal-wrap">
+                    <div>
+                        <img src="/IMG/1.png" alt="">
+                        <p id="modalText" class="style txt">
+                            Please feel free to <span>contact me</span> and I
+                            will get back to you as soon as I can.
+                        </p>
+                    </div>	
+                    <!-- Form -->
+                    <form
+                    action="https://formspree.io/f/moqyvrqz"
+                    method="POST"
+                    id="contact-form"
+                    >
+                        <!-- Name -->
+                        <input
+                            type="txt"
+                            name="name"
+                            placeholder="Name"
+                            required
+                            class="style txt"
+                            autocomplete="off"
+                        />
+                        <!-- SURNAME -->
+                        <input
+                        type="txt"
+                        name="name"
+                        placeholder="Surname"
+                        required
+                        class="style txt"
+                        autocomplete="off"
+                    />
+                        <!-- Email -->
+                        <input
+                            class="style txt"
+                            type="email"
+                            name="email"
+                            placeholder="email@domain.com"
+                            required
+                            autocomplete="off"
+                        />
+                        <!-- Number -->
+                        <input
+                            class="style txt"
+                            type="tel"
+                            name="number"
+                            placeholder="0212345678"
+                            required
+                            autocomplete="off"
+                        />
+                        <div>
+                            <!-- Message -->
+                            <input
+                                class="style txt"
+                                name="message"
+                                placeholder="Your message"
+                                autocomplete="off"
+                            ></input>
+                            <button class="style txt" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>			          		
+            </div>		
+        </div>
     <div id="home">
         <div id="grid">
             <div class="gridline"></div>
@@ -357,9 +429,9 @@
         <div id="bgtext">
             WORK
         </div>
-        <div id="projectHeading" class="style txt">
+        <!-- <div id="projectHeading" class="style txt">
             Education
-        </div>
+        </div> -->
         <div class="filter_buttons style txt">
           <span class="filter" onclick="filterProjects('All')">All</span>
           <span class="filter" onclick="filterProjects('HTML/CSS')"
@@ -376,14 +448,15 @@
     </div>
 
     <!-- CONTACT -->
-    <div id="contact">
+    <!-- <div id="contact">
         <div id="bgtext">
             CONTACT<br>ME
         </div>
-        <div id="contactHeading" class="style txt">
-            Contact Me
-        </div>
-    </div>
+        <p id="contactText" class="style txt">
+            Please feel free to <span>contact me</span> and I
+            will get back to you as soon as I can.
+        </p>
+    </div> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="/SRC/script.js"></script>

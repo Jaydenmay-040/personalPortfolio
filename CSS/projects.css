@@ -17,18 +17,18 @@
 #project #bgtext {
     z-index: -1;
 }
-#projectHeading {
+/* #projectHeading {
     position: relative;
     left: 165px;
     top: 69px;
     font-size: 50px;
     color: #E75555;
-}
+} */
 .filter_buttons {
     position: relative;
-    top: 74px;
+    top: 69px;
     font-size: 18px;
-    margin: 5% 0 0 0;
+    /* margin: 5% 0 0 0; */
     display: flex;
     justify-content: center;
 }

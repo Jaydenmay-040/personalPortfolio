@@ -3,7 +3,6 @@
     height: 100vh;
     /* background: #212228; */
     position: absolute;
-    transition: 0.1s ;
     overflow-y: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
