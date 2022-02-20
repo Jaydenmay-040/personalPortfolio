@@ -33,17 +33,19 @@
             <a href="#home" class="style link" id="#home">HOME</a>
             <a href="#about" class="style link" id="#about">ABOUT</a>
             <a href="#project" class="style link" id="#project">PROJECT</a>
-            <a href="#contact" class="style link" id="#contact">
-                <label for="modal-btn">CONTACT <i class="uil uil-expand-arrows"></i></label> 
-            </a>
+            <a class="style link" id="#contact" onclick="openModal()">CONTACT</a>
         </ul>
     </div>
-        <div class="section full-height">
-            <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>		
-            <div class="modal">
-                <div id="bgtext">
-                    CONTACT<br>ME
-                </div>		
+    
+    <div class="container" style="margin-top: 20px">
+        <div id="modal-window"  class="shadow" >
+            <div id="bgtext">
+                CONTACT<br>ME
+            </div>		
+            <button id="closeBtn" onclick="closeM()">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="main-modal">
                 <div class="modal-wrap">
                     <div>
                         <img src="/IMG/1.png" alt="">
@@ -52,13 +54,12 @@
                             will get back to you as soon as I can.
                         </p>
                     </div>	
-                    <!-- Form -->
                     <form
                     action="https://formspree.io/f/moqyvrqz"
                     method="POST"
                     id="contact-form"
                     >
-                        <!-- Name -->
+                        <div id="contactHeading" class="style txt">LETS TALK</div>
                         <input
                             type="txt"
                             name="name"
@@ -67,7 +68,6 @@
                             class="style txt"
                             autocomplete="off"
                         />
-                        <!-- SURNAME -->
                         <input
                         type="txt"
                         name="name"
@@ -76,7 +76,6 @@
                         class="style txt"
                         autocomplete="off"
                     />
-                        <!-- Email -->
                         <input
                             class="style txt"
                             type="email"
@@ -85,7 +84,6 @@
                             required
                             autocomplete="off"
                         />
-                        <!-- Number -->
                         <input
                             class="style txt"
                             type="tel"
@@ -95,7 +93,6 @@
                             autocomplete="off"
                         />
                         <div>
-                            <!-- Message -->
                             <input
                                 class="style txt"
                                 name="message"
@@ -105,8 +102,11 @@
                             <button class="style txt" type="submit">Send</button>
                         </div>
                     </form>
-                </div>			          		
+                </div>
             </div>		
+        </div>
+      </div>
+        <div class="section full-height">	
         </div>
     <div id="home">
         <div id="grid">
