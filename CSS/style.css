@@ -68,6 +68,7 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 12345678;
     background: url(https://i.gifer.com/WmZ0.gif);
+    top: 0;
 }
 .loaderContainer.hide {
     display: none;
